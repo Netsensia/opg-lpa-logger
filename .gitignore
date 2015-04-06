@@ -1,2 +1,3 @@
 tests/sentry.key
 .idea
+vendor/
