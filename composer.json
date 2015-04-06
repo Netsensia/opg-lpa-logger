@@ -1,5 +1,5 @@
 {
-    "name": "Netsensia/opg-lpa-logger",
+    "name": "netsensia/opg-lpa-logger",
     "description": "Common logger component for OPG LPA modules",
     "license": "MIT",
     "minimum-stability": "dev",
