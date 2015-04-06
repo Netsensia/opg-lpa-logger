@@ -23,19 +23,19 @@ class Logger extends ZendLogger
     
     public function setFileLogPath($logFilename)
     {
-        $this->addWriter(
+        $this->registerWriter(
             new Stream($logFilename)
         );
     }
     
     public function setSentryUri($sentryUri)
     {
-        $this->addWriter(
+        $this->registerWriter(
             new Sentry($sentryUri)
         );
     }
     
-    public function addWriter($logWriter)
+    public function registerWriter($logWriter)
     {
         $logWriter->setFormatter($this->formatter);
         parent::addWriter($logWriter);
