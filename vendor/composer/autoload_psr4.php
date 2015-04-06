@@ -6,5 +6,8 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Zend\\Stdlib\\' => array($vendorDir . '/zendframework/zend-stdlib'),
+    'Zend\\ServiceManager\\' => array($vendorDir . '/zendframework/zend-servicemanager'),
+    'Zend\\Log\\' => array($vendorDir . '/zendframework/zend-log'),
     'Opg\\Lpa\\Logger\\' => array($baseDir . '/src/Opg/Lpa/Logger'),
 );
